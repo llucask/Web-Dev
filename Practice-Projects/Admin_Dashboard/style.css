@@ -1,0 +1,35 @@
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.sidebar{
+    background-color: #1992d4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+
+.header{
+    background-color: red;
+    grid-column: 2/6;
+}
+
+.main-content{
+    background-color: green;
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+}
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+}
